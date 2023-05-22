@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 105px;
+    align-items: center;
+    gap: 16px;
+    background-color: black;
+   
+}
+
+header .pesquisa{
+    background-color: #47474710;
+    height: 60px;
+    border-radius: 8px;
+    width: 560px;
+    position: relative;
+}
+
+header .pesquisa input{
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    padding-left: 16px;
+    padding-right: 60px;
+    transition: all 300ms ease;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 8px;
+}
+
+header .pesquisa input:focus{
+    border-color: #20c931;
+}
+
+header .pesquisa .btn{
+    width: 22px;
+    height: 22px;
+    border: 2px solid #66666650;
+    border-radius: 100%;
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    cursor: pointer;
+    transform: rotate(45deg);
+    transition-duration: 300ms;
+}
+header .pesquisa .btn::after{
+    content: "";
+    width: 6px;
+    height: 2px;
+    background-color: #66666650;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transition-duration: 300ms;
+}
+
+
+header .pesquisa .btn:hover{
+    border-color: #36c920;
+}
+
+header .pesquisa .btn:hover::after{
+    background-color: #20c920;
+}
+
+.header h1 {
+    color: #20c92b;
+    
+}
+
+
+header .logo{
+    display: flex;
+    gap: 8px;
+
+}
+.logo:hover img{
+
+    transform: scale(1.1);
+    -webkit-transform: rotateZ(360deg) ;
+    transform: rotateZ(360deg);
+    animation-duration: infinite;
+    transition: all .7s;
+}
+
+
+
+header .signup{
+    background-color: black;
+    color: #f7f5f5;
+    text-decoration: underline;
+    
+
+}
+
+
+
+header .signin{
+    background-color: #0ac639;
+    color: white;
+    width: 114px;
+    height: 40px;
+    border-radius: 8px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+header nav ul{
+    display: flex;
+    padding-left: 105px;
+    margin-top: 0;
+    gap: 32px; 
+    background-color: black;
+    
+    
+}
+ 
+header ul li a{
+position: relative;
+width: 49px;
+height: 100px;
+left: 2px;
+top: 2px;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 80px;
+
+}
+
+
+header nav ul li a{
+    color: #474747;
+    transition-duration: 300ms;
+    
+}
+
+header nav ul li a:hover{
+    color: #26c920;
+    text-decoration: underline; 
+    font-weight: 700px;
+}
+
+.acoes .acoes1 {
+    height: 28px;
+    width: 102px;
+    left: 991px;
+    top: 50px;
+    border-radius: 8px;
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    padding: 0px;
+    width: 140px;
+    height: 30px;
+    left: 1200px;
+    top: 50px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.75px;
+    text-decoration-line: underline;   
+    color: #474747;    
+    }
+
+    
+
+    #banner img{
+        display: block;
+        width: 100%;
+        }
+    
+        #banner .conteudo h1{
+        white-space: nowrap;
+        padding: 50px;
+        position: absolute;
+        width: 280px;
+        height: 24px;
+        left: 70px;
+        top: 350px;
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 700px;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.75px;
+        
+        
+    }
+    
+    #banner .conteudo h1:hover{
+        -webkit-filter: drop-shadow(15px 10px 5px #fffefefd);
+        filter: drop-shadow(15px 10px 5px #ffffff);
+    }
+    
+    #banner .conteudo h2{
+        position: absolute;
+        width: 510px;
+        height: 132px;
+        left: 115px;
+        top: 450px;
+        font-family:'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 800px;
+        font-size: 64px;
+        line-height: 66px;
+        letter-spacing: 0px;
+        color: #ffffff;
+    }
+
+    #banner .conteudo h2:hover{
+        -webkit-filter: drop-shadow(15px 10px 5px #46c352fe);
+        filter: drop-shadow(15px 10px 5px #ffffff);
+    }
+    #banner .conteudo p{
+        position: absolute;
+        width: 495px;
+        height: 68px;
+        left: 115px;
+        top: 570px;
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 34px;
+        letter-spacing: 0.75px;    
+        color: white;
+    
+    }
+
+    #banner .conteudo p:hover{
+        -webkit-filter: drop-shadow(15px 10px 5px rgb(72, 189, 33));
+        filter: drop-shadow(15px 10px 5px #ffffff);
+    }
+    
+    #banner .conteudo button{
+        position: absolute;
+        left: 10%;
+        right: 10%;
+        top: 0%;
+        bottom: 0%;
+        height: 40px;
+        width: 220px;
+        left: 115px;
+        top: 700px;
+        border-radius: 8px;
+        background: #0ac60d;
+        letter-spacing: 0.75px; 
+        cursor: pointer;
+    
+    }
+
+    #banner .conteudo button:hover{
+        -webkit-filter: drop-shadow(15px 10px 5px rgb(72, 189, 33));
+        filter: drop-shadow(15px 10px 5px #ffffff);
+    }
+
+    .trevo p {
+        text-transform: uppercase;
+        letter-spacing: .5em;
+        display: inline-block;
+        border: 4px double rgba(41, 205, 99, 0.69);
+        border-width: 4px 0;
+        padding: 1.5em 0em;
+        position: absolute;
+        top: 18%;
+        left: 50%;
+        width: 40em;
+        margin: 0 0 0 -20em;
+    }
+    .trevo span {
+    
+          font: 700 4em/1 "Oswald", sans-serif;
+          letter-spacing: 0;
+          padding: .25em 0 .325em;
+          display: block;
+          margin: 0 auto;
+          text-shadow: 0 0 80px rgba(39, 216, 95, 0.5);
+    
+   
+    
+          background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+          -webkit-background-clip: text;
+          background-clip: text;
+    
+   
+    
+          -webkit-text-fill-color: transparent;
+          -webkit-animation : gradiente  80s linear infinite;
+    
+    
+    
+          -webkit-transform: translate3d(0,0,0);
+          -webkit-backface-visibility: hidden;
+    
+      }
+    
+    
+   
+    
+    @-webkit-keyframes gradiente {
+        0% { background-position: 0% 50%; }
+        100% { background-position: 100% 50%; }
+    }
+
+    .trevo .p .span{
+    
+    }
